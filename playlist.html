@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play List</title>
+    <link rel="stylesheet" href="style-2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="menu-btn" id="menuBtn">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="container">
+      <div class="left" id="sidebar">
+        <div class="logo">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.spotify.music&hl=en_IN&gl=US"
+            target="_blank"
+          >
+            <img src="Images/Spotify logo.svg" alt="Logo" />
+          </a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="index.html">
+                <img src="Images/Home.svg" alt="" class="gray-filtered" />
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#listofsongs">
+                <img src="assets/Search.svg" alt="" class="gray-filtered" />
+                <span>Search</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="assets/YourLibrary.svg"
+                  alt=""
+                  class="gray-filtered"
+                />
+                <span>Your Library</span>
+              </a>
+            </li>
+            <div class="play">
+              <h6>PlayLists</h6>
+            </div>
+            <li>
+              <a href="#" class="playlist">
+                <img src="Images/fi-ss-plus-small.svg" alt="" />
+                <span>Create Playlist</span>
+              </a>
+            </li>
+            <li>
+              <a href="#right-pop">
+                <img src="Images/love.svg" alt="" />
+                <span>Liked Songs</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <hr width="100%" style="margin-top: 30px; background: #282828" />
+        <div class="current-song-cover">
+          <img src="Images/album art.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- ----------------------------------------------------------------------------------------------- -->
+      <div class="right">
+        <div class="playlist-header" id="right-pop">
+          <div class="playlist-content">
+            <div class="playlist-cover">
+              <!-- <a href="https://youtu.be/ic8j13piAhQ" target="_blank" title="CLICK HERE TO OPEN ALBUM" -->
+              <img src="assets/pop-right now.svg" alt="" />
+            </div>
+            <div class="playlist-info">
+              <div class="playlist-public common">PLAYLIST</div>
+              <div class="playlist-title common">Pop Right Now</div>
+              <div class="playlist-description common">
+                A soundtrack to fuel your good mood while on the road.
+              </div>
+              <div style="height: 5px"></div>
+              <div class="playlist-stats">
+                <span class="name common-1"> Spotify </span>
+                <span class="time common-1">• 5,131,321 likes </span>
+                <span class="time common-1">• 100 songs, </span>
+                <span class="time common-1">6 hr 57 min </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="playlist-songs-container">
+          <div class="playlist-buttons">
+            <div class="playlist-buttons-left">
+              <div class="playlist-buttons-resume-pause">
+                <i class="fa-sharp fa-solid fa-play" style="color: #ffffff"></i>
+              </div>
+              <div class="playlist-buttons-like normal">
+                <img src="assets/heart.svg" alt="" class="spotify-color" />
+              </div>
+              <div class="playlist-buttons-three-dot normal">
+                <img src="assets/ThreeDots.svg" alt="" />
+              </div>
+            </div>
+            <div class="playlist-buttons-right">
+              <div class="playlist-buttons-search normal">
+                <img src="assets/Search.svg" alt="" />
+              </div>
+              <div class="playlist-buttons-order"><p>Custom Order</p></div>
+            </div>
+          </div>
+
+          <div class="playlist-songs" id="listofsongs">
+            <table>
+              <tr>
+                <th>#</th>
+                <th class="title">Title</th>
+                <th>Album</th>
+                <th>Date Added</th>
+                <th>
+                  <img src="assets/Duration.svg" alt="" class="clock" />
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <i
+                    class="fa-sharp fa-solid fa-play"
+                    style="color: #ffffff"
+                  ></i>
+                </td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/taylor.webp" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">
+                  Future Nostalgia (The Moonlight Edition)
+                </td>
+                <td class="song-date-added">June 25, 2021</td>
+                <td class="song-duration">
+                  <img src="assets/heart.svg" alt="" class="heart1" />
+                  3:26
+                  <img src="assets/ThreeDots.svg" alt="" class="heart1" />
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/taylor.webp" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">
+                  Future Nostalgia (The Moonlight Edition)
+                </td>
+                <td class="song-date-added">Sep 07, 2022</td>
+                <td class="song-duration">6:59</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/pop-singer.svg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">
+                      Young as the Morning old as the Sea
+                    </div>
+                    <div class="song-artist">Passenger</div>
+                  </div>
+                </td>
+                <td class="song-album">Young as the Morning old as the Sea</td>
+                <td class="song-date-added">May 31, 2022</td>
+                <td class="song-duration">5:28</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/blackboy.svg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">
+                  Future Nostalgia (The Moonlight Edition)
+                </td>
+                <td class="song-date-added">April 14, 2023</td>
+                <td class="song-duration">1:05</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/womem-pop.svg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">
+                      Young as the Morning old as the Sea
+                    </div>
+                    <div class="song-artist">Passenger</div>
+                  </div>
+                </td>
+                <td class="song-album">Young as the Morning old as the Sea</td>
+                <td class="song-date-added">Oct 08, 2020</td>
+                <td class="song-duration">8:42</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/dsp.jpg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">
+                  Future Nostalgia (The Moonlight Edition)
+                </td>
+                <td class="song-date-added">Feb 31, 2022</td>
+                <td class="song-duration">10:26</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/Mask Man.svg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">
+                      Young as the Morning old as the Sea
+                    </div>
+                    <div class="song-artist">Passenger</div>
+                  </div>
+                </td>
+                <td class="song-album">Young as the Morning old as the Sea</td>
+                <td class="song-date-added">Aug 12, 2021</td>
+                <td class="song-duration">3:45</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/Anime.svg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">
+                  Future Nostalgia (The Moonlight Edition)
+                </td>
+                <td class="song-date-added">Nov 29, 2020</td>
+                <td class="song-duration">5:05</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/pop-singer.svg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">
+                      Young as the Morning old as the Sea
+                    </div>
+                    <div class="song-artist">Passenger</div>
+                  </div>
+                </td>
+                <td class="song-album">Young as the Morning old as the Sea</td>
+                <td class="song-date-added">March 31, 2020</td>
+                <td class="song-duration">4:20</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/f-1-img.svg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">
+                  Future Nostalgia (The Moonlight Edition)
+                </td>
+                <td class="song-date-added">Sep 07, 2022</td>
+                <td class="song-duration">6:59</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/pop-singer.svg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">
+                      Young as the Morning old as the Sea
+                    </div>
+                    <div class="song-artist">Passenger</div>
+                  </div>
+                </td>
+                <td class="song-album">Young as the Morning old as the Sea</td>
+                <td class="song-date-added">May 31, 2022</td>
+                <td class="song-duration">5:28</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/blackboy.svg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">
+                  Future Nostalgia (The Moonlight Edition)
+                </td>
+                <td class="song-date-added">April 14, 2023</td>
+                <td class="song-duration">1:05</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/womem-pop.svg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">
+                      Young as the Morning old as the Sea
+                    </div>
+                    <div class="song-artist">Passenger</div>
+                  </div>
+                </td>
+                <td class="song-album">Young as the Morning old as the Sea</td>
+                <td class="song-date-added">Oct 08, 2020</td>
+                <td class="song-duration">8:42</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/dsp.jpg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">
+                  Future Nostalgia (The Moonlight Edition)
+                </td>
+                <td class="song-date-added">Feb 31, 2022</td>
+                <td class="song-duration">10:26</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/Mask Man.svg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">
+                      Young as the Morning old as the Sea
+                    </div>
+                    <div class="song-artist">Passenger</div>
+                  </div>
+                </td>
+                <td class="song-album">Young as the Morning old as the Sea</td>
+                <td class="song-date-added">Aug 12, 2021</td>
+                <td class="song-duration">3:45</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/Anime.svg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">
+                  Future Nostalgia (The Moonlight Edition)
+                </td>
+                <td class="song-date-added">Nov 29, 2020</td>
+                <td class="song-duration">5:05</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Images/pop-singer.svg" alt="" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">
+                      Young as the Morning old as the Sea
+                    </div>
+                    <div class="song-artist">Passenger</div>
+                  </div>
+                </td>
+                <td class="song-album">Young as the Morning old as the Sea</td>
+                <td class="song-date-added">March 31, 2020</td>
+                <td class="song-duration">4:20</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="music-player">
+      <div class="song-bar">
+        <div class="song-infos">
+          <div class="image-container">
+            <img src="assets/small-label.svg" alt="" />
+          </div>
+          <div class="song-description">
+            <p class="title">Hold On</p>
+            <p class="artist">Justin Bieber</p>
+          </div>
+        </div>
+        <div class="icons">
+          <img src="assets/heart.svg" alt="" />
+        </div>
+        <div class="icons">
+          <img src="assets/pip.svg" class="pip" />
+        </div>
+      </div>
+      <div class="progress-controller">
+        <div class="control-buttons">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="fa-solid fa-play play-pause"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fa-solid fa-repeat fa-beat"></i>
+        </div>
+        <div class="progress-container">
+          <span>2:11</span>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <span>2:42</span>
+        </div>
+      </div>
+
+      <button class="expand-btn" id="expandBtn">
+        <i class="fas fa-ellipsis-v"></i>
+      </button>
+      <div class="expanded-content" id="expandedContent">
+        <div class="expanded-item">
+          <img src="assets/Queue.svg" alt="que-icon" />
+        </div>
+        <div class="expanded-item">
+          <img src="assets/Connect to a device.svg" alt="laptop-icon" />
+        </div>
+        <div class="expanded-item">
+          <img src="assets/Volume.svg" alt="speaker icon" />
+        </div>
+        <div class="expanded-item">
+          <div class="volume-bar">
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const sidebar = document.getElementById("sidebar");
+
+      // Toggle the sidebar when the menu button is clicked
+      menuBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("show");
+      });
+
+      // Close the sidebar when clicking outside of it on small screens
+      document.addEventListener("click", (event) => {
+        if (
+          !menuBtn.contains(event.target) &&
+          !sidebar.contains(event.target)
+        ) {
+          sidebar.classList.remove("show");
+        }
+      });
+      const expandBtn = document.getElementById("expandBtn");
+      const expandedContent = document.getElementById("expandedContent");
+
+      expandBtn.addEventListener("click", () => {
+        expandedContent.classList.toggle("show");
+      });
+
+      document.addEventListener("click", (event) => {
+        if (
+          !expandBtn.contains(event.target) &&
+          !expandedContent.contains(event.target)
+        ) {
+          expandedContent.classList.remove("show");
+        }
+      });
+    </script>
+  </body>
+</html>
